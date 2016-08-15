@@ -28,7 +28,7 @@ import collectd
 import re
 import MySQLdb
 
-INFLUXDB_TABLE = 'mysql_extended';
+INFLUXDB_TABLE = 'mysql_info';
 MYSQL_CONFIG = {
 	'Host':           'localhost',
 	'Port':           3306,
@@ -264,6 +264,7 @@ MYSQL_VARS = [
 	'innodb_open_files',
 	'innodb_open_files',
 	'join_buffer_size',
+	'long_query_time',
 	'max_connections',
 	'open_files_limit',
 	'query_cache_limit',
